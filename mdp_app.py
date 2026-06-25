@@ -95,13 +95,6 @@ btn_copier = tkinter.Button(page, text="Copier", command=copier)
 btn_copier.grid(row=10, column=2, sticky="se", padx=10, pady=10)
 
 
-
-
-
-
-
-
-
 # ------------- boucle principale -------------
 page.mainloop()
 
