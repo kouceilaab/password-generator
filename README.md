@@ -30,32 +30,43 @@ L'application offre également un calcul de l'**entropie** du mot de passe afin 
 
 ## Calcul de l'entropie
 
-L'entropie mesure la difficulté à deviner un mot de passe.
+L'application calcule l'entropie du mot de passe afin d'estimer son niveau de sécurité.
 
 La formule utilisée est :
 
-\[
-\text{Entropie} = L \times \log_2(N)
-\]
+```
+Entropie = Longueur × log2(nombre de caractères possibles)
+```
 
-où :
+- **Longueur** : nombre de caractères du mot de passe.
+- **Nombre de caractères possibles** : taille de l'ensemble de caractères utilisé (minuscules, majuscules, chiffres et/ou symboles).
 
-- **L** = longueur du mot de passe ;
-- **N** = nombre de caractères possibles.
+Exemple :
 
-Par exemple :
+- Mot de passe de 12 caractères utilisant uniquement les lettres minuscules :
 
-- 12 caractères parmi 26 lettres minuscules :
+```
+Entropie = 12 × log2(26) ≈ 56,4 bits
+```
 
-\[
-12 \times \log_2(26) \approx 56,4\ \text{bits}
-\]
+- Mot de passe de 12 caractères utilisant minuscules, majuscules, chiffres et symboles (82 caractères possibles) :
 
-- 12 caractères parmi 26 minuscules + 26 majuscules + 10 chiffres + 20 symboles (82 caractères) :
+```
+Entropie = 12 × log2(82) ≈ 76,3 bits
+```
 
-\[
-12 \times \log_2(82) \approx 76,3\ \text{bits}
-\]
+### Important
+
+L'entropie est **une estimation théorique** de la résistance d'un mot de passe face à une attaque par force brute. Elle ne garantit pas à elle seule qu'un mot de passe est réellement sécurisé.
+
+En pratique, la sécurité dépend également de plusieurs facteurs :
+
+- la qualité de l'algorithme de génération ;
+- l'absence de mots du dictionnaire ou de motifs prévisibles ;
+- le stockage sécurisé du mot de passe (hachage, salage, etc.) ;
+- les techniques d'attaque utilisées par un attaquant.
+
+L'entropie constitue donc un **indicateur de robustesse**, mais elle ne représente pas à elle seule le niveau réel de sécurité d'un mot de passe.
 
 ## Interprétation
 
