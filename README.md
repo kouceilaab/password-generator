@@ -79,7 +79,7 @@ L'entropie constitue donc un **indicateur de robustesse**, mais elle ne représe
 Plus l'entropie est élevée, plus le mot de passe est difficile à casser par une attaque de force brute.
 
 ## Lancement
-### Depuis un terminal
+- ### Depuis un terminal
 Installer la dépendance :
 
 ```bash
@@ -92,7 +92,7 @@ Puis exécuter :
 python mdp_app.py
 ```
 
-### Avec un fichier .exe pour les utilisateurs Windows
+- ### Avec un fichier .exe pour les utilisateurs Windows
 [mdp_app.exe](https://gofile.io/d/Ofu78P)
 
 ## Auteur
