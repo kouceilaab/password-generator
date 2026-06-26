@@ -89,7 +89,7 @@ pip install pyperclip
 Puis exécuter :
 
 ```bash
-python main.py
+python mdp_app.py
 ```
 
 ### Avec un fichier .exe pour les utilisateurs Windows
